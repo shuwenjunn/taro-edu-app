@@ -1,15 +1,16 @@
 import React from "react";
 import { Image, Swiper, SwiperItem } from "@tarojs/components";
+import classNames from "classnames";
 import "./index.scss";
 
 interface Iprops {
-  customStyle?: string;
+  className?: string;
 }
 
 const Index: React.FC<Iprops> = (props: Iprops) => {
   return (
     <Swiper
-      className="ad"
+      className={classNames("ad", props.className && props.className)}
       indicatorColor="#999"
       indicatorActiveColor="#333"
       circular

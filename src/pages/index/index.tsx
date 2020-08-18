@@ -72,7 +72,7 @@ const Index: React.FC<{}> = () => {
         </View>
       </View>
 
-      <Advertisement />
+      <Advertisement className="ad-space"/>
 
       <SubTitle
         title={"热门学校"}
